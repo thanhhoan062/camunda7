@@ -1,0 +1,36 @@
+{
+  "components": [
+    {
+      "label": "Pack cash",
+      "type": "textfield",
+      "id": "Field_1qm5sgy",
+      "key": "money",
+      "description": "How much cash do you want to bring?",
+      "validate": {
+        "required": true,
+        "pattern": "^(?:0|[1-9][0-9]*)\\.[0-9]+$"
+      }
+    },
+    {
+      "label": "Where do you want to go?",
+      "type": "textfield",
+      "id": "Field_02jhn8l",
+      "key": "country",
+      "description": "Country you are want to go",
+      "defaultValue": "England",
+      "validate": {
+        "required": true,
+        "pattern": "America|England|French|Spain"
+      }
+    }
+  ],
+  "type": "default",
+  "id": "prepare-for-trip-form",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.4.1"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.18.0",
+  "schemaVersion": 5
+}
